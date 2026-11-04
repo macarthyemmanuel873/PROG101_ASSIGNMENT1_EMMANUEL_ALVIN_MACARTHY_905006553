@@ -340,6 +340,8 @@ KROO, PORTEE, CULVERT and REGENT are treated as high-risk wards (factor 0.8) and
 - **Digital Public Good route:** target SDGs 11 and 13, use an OSI-approved licence (AGPL-3.0), publish anonymised alert logs as open data, use open standards such as REST/JSON and the Common Alerting Protocol, collect minimal personal data with consent, and prevent harm through validation, audit logs and escalation to humans. Formal DPG status requires nomination and review by the Digital Public Goods Alliance.
   ## SCREENSHOT
   <img width="1177" height="935" alt="image" src="https://github.com/user-attachments/assets/c6ed444c-fdf5-4bc8-99f3-f3c95f45b369" />
+  <img width="1157" height="841" alt="image" src="https://github.com/user-attachments/assets/3b271023-b7ed-4401-bf13-b4df5bf07d06" />
+
 
 
 
