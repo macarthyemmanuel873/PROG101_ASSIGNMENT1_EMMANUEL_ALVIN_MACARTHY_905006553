@@ -341,6 +341,8 @@ KROO, PORTEE, CULVERT and REGENT are treated as high-risk wards (factor 0.8) and
   ## SCREENSHOT
   <img width="1177" height="935" alt="image" src="https://github.com/user-attachments/assets/c6ed444c-fdf5-4bc8-99f3-f3c95f45b369" />
   <img width="1157" height="841" alt="image" src="https://github.com/user-attachments/assets/3b271023-b7ed-4401-bf13-b4df5bf07d06" />
+  <img width="1655" height="966" alt="image" src="https://github.com/user-attachments/assets/b6340a67-a8ce-4d63-a2fa-dc30a6017edd" />
+
 
 
 
