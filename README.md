@@ -236,9 +236,10 @@ KROO, PORTEE, CULVERT and REGENT are treated as high-risk wards (factor 0.8) and
 
 - The thresholds are illustrative and must be calibrated with SLMet and NDMA.
 - The Krio message templates must be written and approved by community translators before use.
+## AUTHOR
+EMMANUEL_ALVIN_MACARTHY_905006553
 
-## 11. Version control
 
-This repository was created for PROG101 Assignment 1 and shows regular Git commits made while the project was developed. See the [commit history](../../commits/main) for the full list.
+
 
 
