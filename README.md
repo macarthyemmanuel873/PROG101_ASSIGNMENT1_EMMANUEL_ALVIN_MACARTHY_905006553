@@ -338,6 +338,10 @@ KROO, PORTEE, CULVERT and REGENT are treated as high-risk wards (factor 0.8) and
 - **Benefits for Sierra Leone:** no licence fees, no vendor lock-in, skills for local developers and students, and reuse in other flood-affected districts.
 - **Community contributions:** Krio, Mende and Temne translations, threshold calibration by hydrologists, ward and risk data, low-cost sensor integrations, testing and documentation.
 - **Digital Public Good route:** target SDGs 11 and 13, use an OSI-approved licence (AGPL-3.0), publish anonymised alert logs as open data, use open standards such as REST/JSON and the Common Alerting Protocol, collect minimal personal data with consent, and prevent harm through validation, audit logs and escalation to humans. Formal DPG status requires nomination and review by the Digital Public Goods Alliance.
+  ## SCREENSHOT
+  <img width="1177" height="935" alt="image" src="https://github.com/user-attachments/assets/c6ed444c-fdf5-4bc8-99f3-f3c95f45b369" />
+
+
 
 ##  Limitations
 
