@@ -1,7 +1,6 @@
+## PROG101_ASSIGNMENT1_EMMANUEL_ALVIN_MACARTHY_905006533
 # Freetown Community Flood Early Alert System (FCFEAS)
 
-
-**Student:** Emmanuel Alvin Macarthy | **Student ID:** 905006553 | **Examiner:** Elijah Fullah
 
 ---
 
