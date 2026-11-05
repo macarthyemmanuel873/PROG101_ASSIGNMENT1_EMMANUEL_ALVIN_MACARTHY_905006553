@@ -167,77 +167,15 @@ Two flowcharts show the whole design. Each step is tagged with the module (M1 to
 
 The WHILE loop that runs every 15 minutes, the validation decision, the FOR EACH loop over wards, and the RED, ORANGE, YELLOW or GREEN decision cascade.
 
-```mermaid
-%%{init: {"flowchart": {"nodeSpacing": 30, "rankSpacing": 32, "padding": 8, "wrappingWidth": 280}}}%%
-flowchart TD
-    A(["START"]) --> B["Load constants, wards and subscribers<br/>previousLevel = GREEN for all wards"]
-    B --> D[/"INPUT: collect rainfall, water level<br/>and SMS reports (M1)"/]
-    D --> E{"Data valid?"}
-    E -- No --> F["Log error and flag duty officer (M7)"]
-    E -- Yes --> G{"More wards?"}
-    G -- Yes --> I["Set factor (0.8 if high-risk, else 1.0)<br/>confirmed = reportCount ≥ 3 (M3)"]
-    I --> J{"RED condition?"}
-    J -- No --> K{"ORANGE condition?"}
-    K -- No --> L{"YELLOW condition?"}
-    J -- "Yes: RED" --> M{"Level changed?"}
-    K -- "Yes: ORANGE" --> M
-    L -- "Yes: YELLOW" --> M
-    L -- "No: GREEN" --> M
-    M -- Yes --> N[["Send alerts and escalate<br/>see Flowchart 2<br/>previousLevel = level"]]
-    M -- No --> G
-    N --> G
-    G -- "No: log cycle (M7)" --> P["Wait 15 minutes"]
-    F --> P
-    P --> X{"Stop signal?"}
-    X -- No --> D
-    X -- Yes --> Z(["Save final report (M7)<br/>END"])
+<img width="661" height="887" alt="image" src="https://github.com/user-attachments/assets/048051c8-d75a-43a4-a5d6-a06db533cc2c" />
 
-    classDef term fill:#d5e8d4,stroke:#82b366,color:#000,stroke-width:1px
-    classDef proc fill:#dae8fc,stroke:#6c8ebf,color:#000,stroke-width:1px
-    classDef dec fill:#fff2cc,stroke:#d6b656,color:#000,stroke-width:1px
-    classDef io fill:#e1d5e7,stroke:#9673a6,color:#000,stroke-width:1px
-    classDef sub fill:#f8cecc,stroke:#b85450,color:#000,stroke-width:1px
-    class A,Z term
-    class B,F,I,P proc
-    class E,G,J,K,L,M,X dec
-    class D io
-    class N sub
-```
 
 ### Flowchart 2: Alert dissemination and escalation
 
 Called from Flowchart 1 when a ward's level changes: the loop over subscribers, English or Krio selection, SMS retries, notification of radio and volunteers, and escalation if nobody acknowledges within 10 minutes.
 
-```mermaid
-%%{init: {"flowchart": {"nodeSpacing": 30, "rankSpacing": 32, "padding": 8, "wrappingWidth": 280}}}%%
-flowchart TD
-    A(["START: ward, level"]) --> B["Build English and Krio messages (M4)<br/>Get ward subscribers (M2)"]
-    B --> D{"Next subscriber?"}
-    D -- Yes --> E{"Language = Krio?"}
-    E -- "Yes: Krio text" --> F[/"OUTPUT: send SMS (M5)"/]
-    E -- "No: English text" --> F
-    F --> G{"Delivered?"}
-    G -- "Yes: sentCount + 1" --> D
-    G -- "No: failCount + 1" --> D
-    D -- No --> H["Retry failed SMS, up to 3 attempts"]
-    H --> I{"Level is ORANGE or RED?"}
-    I -- Yes --> J[/"OUTPUT: notify radio, volunteers and<br/>NDMA focal point; siren if RED (M5)"/]
-    J --> M{"Acknowledged within<br/>10 minutes? (M6)"}
-    M -- No --> N[/"OUTPUT: escalate to District Committee<br/>and NDMA duty officer (M6)"/]
-    I -- No --> R
-    M -- Yes --> R
-    N --> R["Log results (M7)"]
-    R --> S(["END: return to Flowchart 1"])
+<img width="667" height="815" alt="image" src="https://github.com/user-attachments/assets/164e255e-9e5e-476e-945d-b8578735e79e" />
 
-    classDef term fill:#647687,stroke:#314354,color:#ffffff,stroke-width:1px
-    classDef proc fill:#1ba1e2,stroke:#006eaf,color:#ffffff,stroke-width:1px
-    classDef dec fill:#f0a30a,stroke:#bd7000,color:#000000,stroke-width:1px
-    classDef io fill:#60a917,stroke:#2d7600,color:#ffffff,stroke-width:1px
-    class A,S term
-    class B,H,R proc
-    class D,E,G,I,M dec
-    class F,J,N io
-```
 
 ## Pseudocode
 
