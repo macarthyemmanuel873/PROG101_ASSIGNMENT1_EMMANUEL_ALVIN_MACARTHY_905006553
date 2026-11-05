@@ -2,7 +2,6 @@
 
 **PROG101: Principles of Programming Logic and Design** | Assignment 1: Designing Logical Solutions for Sierra Leone Community Challenges
 
-Limkokwing University of Creative Technology, Sierra Leone | Department of Information and Communication Technology | Semester 01, September 2026 to January 2027
 
 **Student:** Emmanuel Alvin Macarthy | **Student ID:** 905006553 | **Examiner:** Elijah Fullah
 
