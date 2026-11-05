@@ -1,5 +1,5 @@
 ## PROG101_ASSIGNMENT1_EMMANUEL_ALVIN_MACARTHY_905006533
-This repository contains my Programming Logic Assignment, focused on the design of the Freetown Community Flood Early Alert System (FCFEAS). This repository contains my Programming Logic Assignment, focused on the design of the Freetown Community Flood Early Alert System (FCFEAS)
+A logical system for early flood warnings for the freetwon community
 # Freetown Community Flood Early Alert System (FCFEAS)
 
 
