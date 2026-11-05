@@ -1,11 +1,7 @@
 # Freetown Community Flood Early Alert System (FCFEAS)
 
-**PROG101: Principles of Programming Logic and Design** | Assignment 1: Designing Logical Solutions for Sierra Leone Community Challenges
-
 
 **Student:** Emmanuel Alvin Macarthy | **Student ID:** 905006553 | **Examiner:** Elijah Fullah
-
-> This is a **logical design only**. No source code is written, as the assignment requires. The solution is described using computational thinking, an algorithm, pseudocode, flowcharts and modular design.
 
 ---
 
